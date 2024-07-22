@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <div id="logo-container">
+        <img src="mylogo.gif" alt="Anshul Gill Logo" id="animated-logo">
+    </div>
+
+    <div id="main-content" style="display: none;">
+    <div class="container">
+        <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark ">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#Projects">Projects</a></li>
+                        <!-- <li class="nav-item"><a class="nav-link" href="#services">Services</a></li> -->
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact Me</a></li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <div class="devpic">
+            <img src="mypic2.png" alt="Anshul Gill" class="img-fluid">
+        </div>
+        <div class="devinfo">
+            <div class="hello">Hello I am</div>
+            <div class="name"><b id="animated-name">ANSHUL GILL</b></div>
+            <div class="about"><b>Certified AWS Developer & Entrepreneur</b></div>
+            <div class="buttons">
+                <a href="/cv.txt.pdf" target="_blank" class="btn btn-primary">Download CV</a>
+            </div>
+        </div>
+
+        <div id="about" class="about-me">
+            <h2 >About Me</h2>
+            <p>Hello! My name is Anshul Gill, a passionate and enthusiastic web developer. I hold a Master’s degree in Computer Application and have gained valuable professional experience through a 6-month internship as a Full Stack Developer at Hoping Minds. During my internship, I honed my skills in HTML, CSS, Bootstrap, JavaScript, React, and AWS. Additionally, I have 6 months of experience using CorelDRAW for graphic design, and I'm proficient in Adobe Photoshop.
+
+                I am always eager to learn and grow in my field, which is evident from my diverse skill set that includes both web development and graphic design. Beyond my professional life, I have a love for reading books, listening to music, cooking, and playing cricket.
+                                
+                I pride myself on my leadership qualities and my ability to remain calm under pressure. My enthusiasm for technology and creativity drives me to continuously improve and innovate in my work.</p>
+        </div>
+
+        <div class="key-skills">
+            <b><h3>Skills</h3></b>
+            <div class="skills-container">
+                <div class="skill-box" >
+                    <img src="reactj.gif" alt="reactj" id="react">
+                    <p>React</p></div>
+                <div class="skill-box">
+                    <img src="iconh.gif" alt="reactj" id="HTML">
+                    <p>HTML</p></div>
+                <div class="skill-box">
+                    <img src="iconcss.png" alt="reactj" id="CSS">
+                    <p>CSS</p></div>
+                <div class="skill-box">
+                    <img src="jas.png" alt="reactj" id="JavaScript">
+                    <p>JavaScript</p></div>
+                <div class="skill-box">
+                    <img src="Nodejs.png" alt="reactj" id="Nodejs">
+                    <p>Node.js</p></div>
+                <div class="skill-box">
+                    <img src="aws.png" alt="reactj" id="AWS">
+                    <p>AWS</p>
+                </div>
+                <div class="skill-box">
+                    <img src="Adobe.gif" alt="reactj" id="Adobe Photoshop">
+                    <p>Adobe Photoshop</p>
+                </div>
+            </div>
+        </div>
+        <div class="mystore">
+            <h2>My Products</h2>
+            <iframe style="border-radius:24px;border:none" 
+            src="https://embed.creator-spring.com/widget?slug=mystichub&per=20&currency=&page=1&layout=carousel-small&theme=light" 
+            title="mystichub Merch store powered by Spring" width="100%" height="420" data-reactroot="">
+        </iframe>
+        </div>
+
+        <div id="Projects" class="My-Projects">
+            <h2 >My Projects</h2>
+            <div class="project-item">
+                <img src="Ecomm.png" alt="E-commerce Project" class="project-image">
+                <div class="project-info">
+                    <h3 style="padding-top: 15px;">E-commerce Project</h3>
+                    <p>This project is a fully functional e-commerce platform with features like user authentication, product listings, shopping cart, and payment gateway integration.</p>
+                    <a href="D:\Gill Updates\Myportfolio2\E-commerce\shoes-ecomm.html" target="_blank" class="btn btn-danger">Open Project</a>
+                </div>
+            </div>
+
+            <div id="contact" class="contact-form">
+                <h2>Contact me </h2>
+                <form action="your-server-endpoint" method="post">
+                    <div class="form-group">
+                        <label for="firstName">First Name:</label>
+                        <input type="text" id="firstName" name="firstName" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name:</label>
+                        <input type="text" id="lastName" name="lastName" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Write your query here</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
