@@ -1,0 +1,252 @@
+/* style.css */
+
+body,html {
+  font-family: Arial, sans-serif;
+  background-color: #0b0c0b;
+  color: #ddd;
+}
+#logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #171212; /* Adjust background color as needed */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000; /* Black background for the logo container */
+  z-index: 1000;
+}
+
+#animated-logo {
+  width: auto; /* Adjust size as needed */
+  height: auto;
+}
+
+.navbar {
+  background-color: transparent !important; /* Make navbar transparent */
+}
+
+.navbar .form-inline .form-control {
+  background-color: #fFF; /* Set search box background to white */
+  border: 1px solid #fff; /* Set border to white */
+  border-radius: 6PX;
+}
+
+.navbar .form-inline .btn-outline-success {
+  color: #6f67e2;
+  border-color: #fff;
+}
+
+.navbar .form-inline .btn-outline-success:hover {
+  color: #000;
+  background-color: #fff;
+}
+/* .navbar-nav .nav-item .nav-link {
+  color: white;
+} */
+
+/* .navbar-nav .nav-item .nav-link:hover {
+  background-color: #111;
+} */
+
+.devpic {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.devpic img {
+  max-width: 200px;
+  border-radius: 22%;
+  background-color: darkgoldenrod;
+}
+
+.devinfo {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.devinfo .hello {
+  font-size: 1.5em;
+}
+
+.hello {
+  position: relative;
+  animation: slide-in 1s forwards;
+}
+@keyframes slide-in {
+  0% {
+      transform: translateX(-100%);
+      opacity: 0;
+  }
+  100% {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+.devinfo .name {
+  font-size: 2em;
+  margin-top: 10px;
+}
+
+
+.name span {
+  opacity: 0;
+  animation: fade-in 1s forwards;
+}
+
+@keyframes fade-in {
+  to {
+      opacity: 1;
+  }
+}
+.devinfo .about {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+.h2, h2 {
+  font-weight: bold;
+  font-size: 4em;
+}
+.devinfo .buttons {
+  margin-top: 20px;
+}
+
+.devinfo .buttons .btn {
+  margin: 5px;
+}
+
+.key-skills {
+  margin-top: 40px;
+}
+
+.key-skills h3 {
+  text-align: center;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.skill-box {
+  /* background-color: #557bc1;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  width: 180px;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.2em;
+  transition: transform 0.5s, background-color 0.3s; */
+
+  display: flex;
+  background-color: #6f67e2;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  text-align: center;
+  width: 180px; 
+  height: 180px; 
+  margin: 10px;
+}
+
+.skill-img {
+  width: 80%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.skill-box p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.skill-box:hover {
+  background-color: #1c1d15;
+  color: white;
+  transform: scale(1.1);
+}
+
+/* Optional: Adding keyframe animation */
+@keyframes skillAnimation {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.skill-box:hover {
+  animation: skillAnimation 0.5s ease-in-out;
+}
+
+
+.project-item img{
+  max-width: 64%;
+  padding-top: 20px;
+  border-radius: 50px;
+}
+
+.project-item img:hover{
+  transform:scale(1.00006)
+}
+
+.contact-form {
+  padding: 20px;
+  background-color: #100b0b;
+  border-radius: 5px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-form .form-group {
+  margin-bottom: 15px;
+}
+
+.contact-form .form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contact-form .form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-form .btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-form .btn:hover {
+  background-color: #0056b3;
+}
